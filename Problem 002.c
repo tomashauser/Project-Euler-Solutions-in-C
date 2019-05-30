@@ -14,8 +14,9 @@ int main() {
     a = b;
     b = c;
     index++;
-    if (index % 3 == 0) {
+    if (index == 3) {
         sum += c;
+       index = 0;
     }
    }
     printf("%d\n", sum); // 4613732
