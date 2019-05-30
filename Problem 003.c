@@ -16,7 +16,7 @@ int main() {
     while(index < LENGTH) {
         if (num % primes[index] == 0) {
             maxDiv = primes[index];
-            printf("%d ", maxDiv);
+            printf("%d ", maxDiv); // 5 7 13 29
         }
         if (primes[index] > (num / 2)) break; // A prime divisor cannot be bigger than num/2.
         index++;
