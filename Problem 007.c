@@ -20,7 +20,7 @@ int main(){
     }
 }
 
-int is_prime(int num) { //Efficiency of the entire program depends on this function. I used one from problem 3.
+int is_prime(int num) { //Efficiency of the entire code depends on this function. I used one from problem 3.
      if (num <= 1) return 0;
      if (num % 2 == 0 && num > 2) return 0;
      for(int i = 3; i < num / 2; i+= 2) {
