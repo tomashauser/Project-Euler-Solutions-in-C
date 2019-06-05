@@ -13,7 +13,7 @@ Find the product abc.
 
 int main() {
     int c;
-    for (int a = 1; a < 1000; a++) { //There is no need to worry about upper limit - the program will stop when it finds the solution.
+    for (int a = 1; a < 1000; a++) { //There is no need to worry about an upper limit - the program will stop when it finds the solution.
         for (int b = a; b < 1000; b++) { //Since adding is commutative, let's use a permutation without repetition.
             c = (1000 - a - b); //If a + b + c = 1000, then c = 1000 - a - b.
             if (a * a + b * b == c * c) { //If a^2 + b^2 = c^2, respectively a^2 + b^2 = (1000 - a - b)^2, is true, then also a + b + c = 1000 is true, since *c* negates *a* and *b* in a + b + c = 1000.
