@@ -15,7 +15,7 @@ int main() {
         sumOfPowers = 0;
         number++;
     }
-    printf("%d\n", sumOfNumbers);
+    printf("%d\n", sumOfNumbers); //443839
     return 0;
 }
 
@@ -48,6 +48,5 @@ int integerPow(int base, int exp) {
             break;
         base *= base;
     }
-
     return result;
 }
